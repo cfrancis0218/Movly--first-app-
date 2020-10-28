@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thank You View Controller-->
+        <scene sceneID="i0d-ef-KQa">
+            <objects>
+                <viewController storyboardIdentifier="ThankYouVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NOf-Fq-07N" customClass="ThankYouViewController" customModule="Movly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yNQ-RL-4Oo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkforest" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-Y1-C6o">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="ASk-Rz-Y0J"/>
+                                    <constraint firstAttribute="width" constant="414" id="wAX-n1-1dh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opL-X6-MtL">
+                                <rect key="frame" x="20" y="814" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A5z-Uo-6qL"/>
+                                    <constraint firstAttribute="width" constant="374" id="DFj-kY-xiy"/>
+                                </constraints>
+                                <state key="normal" title="HOME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3zF-lc-9Z1" kind="show" id="Khb-VD-fbb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERROR IS HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6R-0c-Jwx">
+                                <rect key="frame" x="60" y="44" width="294" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="6am-wV-Y6b"/>
+                                    <constraint firstAttribute="height" constant="106" id="MzZ-bN-bHG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="opL-X6-MtL" firstAttribute="leading" secondItem="XBf-YA-G5R" secondAttribute="leading" constant="20" id="Cyg-aL-8g9"/>
+                            <constraint firstAttribute="bottom" secondItem="Noa-Y1-C6o" secondAttribute="bottom" id="NJr-oM-55e"/>
+                            <constraint firstItem="Noa-Y1-C6o" firstAttribute="leading" secondItem="XBf-YA-G5R" secondAttribute="leading" id="VLK-Xd-UlC"/>
+                            <constraint firstItem="XBf-YA-G5R" firstAttribute="trailing" secondItem="opL-X6-MtL" secondAttribute="trailing" constant="20" id="XHD-AS-Iky"/>
+                            <constraint firstItem="opL-X6-MtL" firstAttribute="bottom" secondItem="XBf-YA-G5R" secondAttribute="bottom" id="bRK-b3-PUG"/>
+                            <constraint firstItem="XBf-YA-G5R" firstAttribute="trailing" secondItem="a6R-0c-Jwx" secondAttribute="trailing" constant="60" id="cd2-A5-8Uy"/>
+                            <constraint firstItem="a6R-0c-Jwx" firstAttribute="leading" secondItem="XBf-YA-G5R" secondAttribute="leading" constant="60" id="dWu-jz-2do"/>
+                            <constraint firstItem="a6R-0c-Jwx" firstAttribute="top" secondItem="XBf-YA-G5R" secondAttribute="top" id="niy-j3-6hb"/>
+                            <constraint firstItem="Noa-Y1-C6o" firstAttribute="top" secondItem="yNQ-RL-4Oo" secondAttribute="top" id="sSz-sg-sxe"/>
+                            <constraint firstItem="Noa-Y1-C6o" firstAttribute="trailing" secondItem="XBf-YA-G5R" secondAttribute="trailing" id="w3g-zg-QW5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XBf-YA-G5R"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="opL-X6-MtL" id="Dku-xu-ck9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXO-v0-cak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.81159420289856" y="154.6875"/>
+        </scene>
+        <!--HomePageVC-->
+        <scene sceneID="I7R-Pu-vkc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomePageVC" storyboardName="HomePage" referencedIdentifier="HomePageVC" id="3zF-lc-9Z1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="m6K-y7-vQ3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ar-kG-eLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="darkforest" width="6016" height="4000"/>
+    </resources>
+</document>
